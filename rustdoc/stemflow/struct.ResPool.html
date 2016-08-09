@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `ResPool` struct in crate `stemflow`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, ResPool">
+
+    <title>stemflow::ResPool - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='index.html'>stemflow</a></p><script>window.sidebarCurrent = {name: 'ResPool', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>stemflow</a>::<wbr><a class='struct' href=''>ResPool</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-513' class='srclink' href='../src/stemflow/lib.rs.html#346-349' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct ResPool&lt;A&gt; <span class='where'>where A: <a class='trait' href='../stemflow/trait.Access.html' title='stemflow::Access'>Access</a></span> {
+    // some fields omitted
+}</pre><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl&lt;A&gt; <a class='struct' href='../stemflow/struct.ResPool.html' title='stemflow::ResPool'>ResPool</a>&lt;A&gt; <span class='where'>where A: <a class='trait' href='../stemflow/trait.Access.html' title='stemflow::Access'>Access</a></span></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='struct' href='../stemflow/struct.ResPool.html' title='stemflow::ResPool'>ResPool</a>&lt;A&gt;</code></h4>
+<h4 id='method.new_dom' class='method'><code>fn <a href='#method.new_dom' class='fnname'>new_dom</a>(&amp;mut self, name: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>, acl: <a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;A&gt;) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/alloc/arc/struct.Arc.html' title='alloc::arc::Arc'>Arc</a>&lt;<a class='struct' href='../stemflow/struct.Domain.html' title='stemflow::Domain'>Domain</a>&lt;A&gt;&gt;</code></h4>
+<div class='docblock'><p>Create a domain if it doesn&#39;t have a twin or return an existing equivalent domain (can have
+a different name).</p>
+</div><h4 id='method.contains_dom' class='method'><code>fn <a href='#method.contains_dom' class='fnname'>contains_dom</a>(&amp;self, dom: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/alloc/arc/struct.Arc.html' title='alloc::arc::Arc'>Arc</a>&lt;<a class='struct' href='../stemflow/struct.Domain.html' title='stemflow::Domain'>Domain</a>&lt;A&gt;&gt;) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.insert_dom' class='method'><code>fn <a href='#method.insert_dom' class='fnname'>insert_dom</a>(&amp;mut self, dom: <a class='struct' href='https://doc.rust-lang.org/nightly/alloc/arc/struct.Arc.html' title='alloc::arc::Arc'>Arc</a>&lt;<a class='struct' href='../stemflow/struct.Domain.html' title='stemflow::Domain'>Domain</a>&lt;A&gt;&gt;) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/alloc/arc/struct.Arc.html' title='alloc::arc::Arc'>Arc</a>&lt;<a class='struct' href='../stemflow/struct.Domain.html' title='stemflow::Domain'>Domain</a>&lt;A&gt;&gt;</code></h4>
+<div class='docblock'><p>Record a domain if it doesn&#39;t have a twin or return an existing equivalent domain (can have
+a different name).</p>
+</div><h4 id='method.allow' class='method'><code>fn <a href='#method.allow' class='fnname'>allow</a>(&amp;mut self, acl: &amp;<a class='struct' href='https://doc.rust-lang.org/nightly/collections/vec/struct.Vec.html' title='collections::vec::Vec'>Vec</a>&lt;A&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='struct' href='https://doc.rust-lang.org/nightly/alloc/arc/struct.Arc.html' title='alloc::arc::Arc'>Arc</a>&lt;<a class='struct' href='../stemflow/struct.Domain.html' title='stemflow::Domain'>Domain</a>&lt;A&gt;&gt;&gt;</code></h4>
+<div class='docblock'><p>Get (or create) the tighter domain with all this ACL</p>
+</div></div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a, A&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html' title='graphviz::Labeller'>Labeller</a>&lt;'a, <a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;, <a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;&gt; for <a class='struct' href='../stemflow/struct.ResPool.html' title='stemflow::ResPool'>ResPool</a>&lt;A&gt; <span class='where'>where A: <a class='trait' href='../stemflow/trait.Access.html' title='stemflow::Access'>Access</a></span></code></h3><div class='impl-items'><h4 id='method.graph_id' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.graph_id' class='fnname'>graph_id</a>(&amp;'a self) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/graphviz/struct.Id.html' title='graphviz::Id'>Id</a>&lt;'a&gt;</code></h4>
+<h4 id='method.node_id' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.node_id' class='fnname'>node_id</a>(&amp;'a self, node: &amp;<a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;) -&gt; <a class='struct' href='https://doc.rust-lang.org/nightly/graphviz/struct.Id.html' title='graphviz::Id'>Id</a>&lt;'a&gt;</code></h4>
+<h4 id='method.node_label' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.node_label' class='fnname'>node_label</a>(&amp;'a self, node: &amp;<a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/graphviz/enum.LabelText.html' title='graphviz::LabelText'>LabelText</a>&lt;'a&gt;</code></h4>
+<h4 id='method.edge_label' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.edge_label' class='fnname'>edge_label</a>(&amp;'a self, edge: &amp;<a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/graphviz/enum.LabelText.html' title='graphviz::LabelText'>LabelText</a>&lt;'a&gt;</code></h4>
+<h4 id='method.node_shape' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.node_shape' class='fnname'>node_shape</a>(&amp;'a self, _node: &amp;N) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/option/enum.Option.html' title='core::option::Option'>Option</a>&lt;<a class='enum' href='https://doc.rust-lang.org/nightly/graphviz/enum.LabelText.html' title='graphviz::LabelText'>LabelText</a>&lt;'a&gt;&gt;</code></h4>
+<h4 id='method.node_style' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.node_style' class='fnname'>node_style</a>(&amp;'a self, _n: &amp;N) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/graphviz/enum.Style.html' title='graphviz::Style'>Style</a></code></h4>
+<h4 id='method.edge_style' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.Labeller.html#method.edge_style' class='fnname'>edge_style</a>(&amp;'a self, _e: &amp;E) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/graphviz/enum.Style.html' title='graphviz::Style'>Style</a></code></h4>
+</div><h3 class='impl'><code>impl&lt;'a, A&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/graphviz/trait.GraphWalk.html' title='graphviz::GraphWalk'>GraphWalk</a>&lt;'a, <a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;, <a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;&gt; for <a class='struct' href='../stemflow/struct.ResPool.html' title='stemflow::ResPool'>ResPool</a>&lt;A&gt; <span class='where'>where A: <a class='trait' href='../stemflow/trait.Access.html' title='stemflow::Access'>Access</a></span></code></h3><div class='impl-items'><h4 id='method.nodes' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.GraphWalk.html#method.nodes' class='fnname'>nodes</a>(&amp;self) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/graphviz/type.Nodes.html' title='graphviz::Nodes'>Nodes</a>&lt;'a, <a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;&gt;</code></h4>
+<h4 id='method.edges' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.GraphWalk.html#method.edges' class='fnname'>edges</a>(&amp;'a self) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/graphviz/type.Edges.html' title='graphviz::Edges'>Edges</a>&lt;'a, <a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;&gt;</code></h4>
+<h4 id='method.source' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.GraphWalk.html#method.source' class='fnname'>source</a>(&amp;self, edge: &amp;<a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;) -&gt; <a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;</code></h4>
+<h4 id='method.target' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/graphviz/trait.GraphWalk.html#method.target' class='fnname'>target</a>(&amp;self, edge: &amp;<a class='struct' href='../stemflow/struct.Edge.html' title='stemflow::Edge'>Edge</a>&lt;A&gt;) -&gt; <a class='enum' href='../stemflow/enum.Node.html' title='stemflow::Node'>Node</a>&lt;A&gt;</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "stemflow";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script defer src="../search-index.js"></script>
+</body>
+</html>

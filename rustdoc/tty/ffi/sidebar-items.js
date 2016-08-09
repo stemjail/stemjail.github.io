@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["get_winsize",""],["getpt",""],["grantpt",""],["openpty","Thread-safe (i.e. reentrant) version of `openpty(3)`"],["ptsindex",""],["ptsname",""],["set_winsize",""],["unlockpt",""]],"struct":[["Pty",""],["WinSize",""]]});

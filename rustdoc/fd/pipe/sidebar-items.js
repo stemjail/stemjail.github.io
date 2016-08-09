@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Pipe","A thread-safe `pipe(2)` interface."]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["ffi",""]],"struct":[["FileDesc","Wrapper around a raw file descriptor."],["TtyClient",""],["TtyServer",""]]});

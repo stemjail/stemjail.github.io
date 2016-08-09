@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Action",""],["Node",""]],"fn":[["absolute_path",""]],"macro":[["let_dom!",""],["new_acl!",""]],"struct":[["Domain",""],["Edge",""],["FileAccess","Greedy access control"],["ResPool",""]],"trait":[["Access",""],["RefDom",""],["SetAccess",""],["VecAccess",""]],"type":[["RefAccess","Default FileAccess dereferencer"]]});

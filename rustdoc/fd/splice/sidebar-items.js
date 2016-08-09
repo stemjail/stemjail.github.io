@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["splice_loop","Loop while reading and writing from one file descriptor to another using `splice(2)`. The loop stop when `do_flush` is set to `true`. At the end, a flush event is send to `flush_event` if any."]]});

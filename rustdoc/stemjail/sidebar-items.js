@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["cmd",""],["config",""],["jail",""],["srv",""],["util",""]],"static":[["MONITOR_SOCKET_PATH",""],["PORTAL_PROFILES_PATH",""],["PORTAL_SOCKET_PATH",""]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["create_same_type","Create a `dst` file or directory according to the `src`"],["mkdir_if_not","Do not return error if the directory already exist"],["nest_path","Concatenate two paths (different from `join()`)"],["touch_if_not","Do not return error if the file already exist"]],"struct":[["TmpWorkDir",""]]});
